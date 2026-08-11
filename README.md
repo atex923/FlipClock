@@ -15,11 +15,12 @@
 
 ## 目前版本
 
-V0.6.5
+V0.6.6
 
 本版重點：
 
-- 系統匣優先載入同資料夾 `FlipClock_V0.6.5.ico`，不存在時才回退到 EXE embedded icon 或系統預設圖示。
+- 依版號建立獨立發行檔案，保留 V0.6.5 並新增 V0.6.6。
+- 系統匣優先載入同資料夾 `FlipClock_V0.6.6.ico`，不存在時才回退到 EXE embedded icon 或系統預設圖示。
 - 釋放由 `LoadImageW`/`ExtractIconExW` 取得的 icon handle，避免 tray 結束時留下資源。
 - 非 Windows 平台不再啟動 Win32 tray thread，維持基本時鐘視窗。
 - 同步 `.py`、`.pyw`、Nuitka build scripts 與版本資訊。
@@ -29,13 +30,13 @@ V0.6.5
 需要 Python 3.10 以上，Windows 建議 Python 3.13 64-bit。
 
 ```bash
-python FlipClock_V0.6.5.py
+python FlipClock_V0.6.6.py
 ```
 
 Windows 若要無 console 執行，可直接雙擊：
 
 ```text
-FlipClock_V0.6.5.pyw
+FlipClock_V0.6.6.pyw
 ```
 
 ## 建置 Windows EXE
@@ -43,20 +44,30 @@ FlipClock_V0.6.5.pyw
 建議先測 standalone，確認可啟動後再建 onefile。
 
 ```bat
-Build_FlipClock_V0.6.5_Standalone.bat
-Build_FlipClock_V0.6.5_Onefile.bat
+Build_FlipClock_V0.6.6_Standalone.bat
+Build_FlipClock_V0.6.6_Onefile.bat
 ```
 
-Build script 會安裝/更新 Nuitka、ordered-set、zstandard，並使用 `FlipClock_V0.6.5.ico` 作為 EXE 圖示。
+Build script 會安裝/更新 Nuitka、ordered-set、zstandard，並使用 `FlipClock_V0.6.6.ico` 作為 EXE 圖示。
 
 ## 檔案
 
-- `FlipClock_V0.6.5.py`: 主程式。
-- `FlipClock_V0.6.5.pyw`: Windows 無 console 執行入口。
-- `FlipClock_V0.6.5.ico`: Windows EXE 與系統匣圖示。
-- `Build_FlipClock_V0.6.5_Standalone.bat`: Nuitka standalone 建置。
-- `Build_FlipClock_V0.6.5_Onefile.bat`: Nuitka onefile 建置。
+- `FlipClock_V0.6.6.py`: 主程式。
+- `FlipClock_V0.6.6.pyw`: Windows 無 console 執行入口。
+- `FlipClock_V0.6.6.ico`: Windows EXE 與系統匣圖示。
+- `Build_FlipClock_V0.6.6_Standalone.bat`: Nuitka standalone 建置。
+- `Build_FlipClock_V0.6.6_Onefile.bat`: Nuitka onefile 建置。
 - `CODEX_HANDOFF.md`: 版本交接與驗收重點。
+
+## 版本資料夾
+
+同步到 Google Drive 時，每個版號使用獨立資料夾：
+
+```text
+FlipClock/V0.6.4/
+FlipClock/V0.6.5/
+FlipClock/V0.6.6/
+```
 
 ## 驗收重點
 

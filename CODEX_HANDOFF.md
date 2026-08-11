@@ -1,4 +1,4 @@
-# FlipClock V0.6.5 - Codex Handoff
+# FlipClock V0.6.6 - Codex Handoff
 
 ## 專案定位
 
@@ -6,13 +6,14 @@ FlipClock 是 Python/Tkinter 製作的鐵路式上下翻牌時鐘。Windows 版�
 
 ## 本版完成
 
-1. 由 V0.6.4 升級到 V0.6.5。
+1. 由 V0.6.5 升級到 V0.6.6。
 2. `.py` / `.pyw` / BAT / Nuitka metadata / ICO 檔名同步進版。
-3. Windows tray icon 優先載入程式同資料夾的 `FlipClock_V0.6.5.ico`。
+3. Windows tray icon 優先載入程式同資料夾的 `FlipClock_V0.6.6.ico`。
 4. 若同資料夾 ICO 不存在，fallback 到 `sys.executable` embedded icon，再 fallback 到 Windows 預設應用程式圖示。
 5. 由 `LoadImageW` 或 `ExtractIconExW` 建立的 icon handle 會在 tray 關閉時釋放。
 6. 非 Windows 平台不再啟動 Win32 tray thread，避免基本視窗被 tray 失敗流程關閉。
 7. 更新 GitHub README，按程式特色重新整理 repo 簡介、功能、執行與建置方式。
+8. 同步到 Google Drive 時，每個版號使用獨立資料夾。
 
 ## 仍需在 Windows 實機驗收
 
@@ -32,6 +33,12 @@ FlipClock 是 Python/Tkinter 製作的鐵路式上下翻牌時鐘。Windows 版�
 
 ```bat
 py -3.13 -m pip install --upgrade Nuitka ordered-set zstandard
-Build_FlipClock_V0.6.5_Standalone.bat
-Build_FlipClock_V0.6.5_Onefile.bat
+Build_FlipClock_V0.6.6_Standalone.bat
+Build_FlipClock_V0.6.6_Onefile.bat
+```
+
+## Google Drive 保存位置
+
+```text
+/Users/atex1/Library/CloudStorage/GoogleDrive-atex.lin@gmail.com/我的雲端硬碟/12.Codex/FlipClock/V0.6.6
 ```

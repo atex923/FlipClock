@@ -1,6 +1,6 @@
 {
   "project": "FlipClock",
-  "version": "V0.6.5",
+  "version": "V0.6.6",
   "platforms": [
     "Windows",
     "macOS (basic window support)",
@@ -9,12 +9,13 @@
   "recommended_python": "3.13 x64",
   "handoff_entry": "CODEX_HANDOFF.md",
   "entry_points": [
-    "FlipClock_V0.6.5.py",
-    "FlipClock_V0.6.5.pyw"
+    "FlipClock_V0.6.6.py",
+    "FlipClock_V0.6.6.pyw"
   ],
   "build_scripts": [
-    "Build_FlipClock_V0.6.5_Standalone.bat",
-    "Build_FlipClock_V0.6.5_Onefile.bat"
+    "Build_FlipClock_V0.6.6_Standalone.bat",
+    "Build_FlipClock_V0.6.6_Onefile.bat"
   ],
-  "status": "V0.6.5 upgrade complete; Windows tray behavior still needs real Windows runtime verification."
+  "cloud_archive_root": "/Users/atex1/Library/CloudStorage/GoogleDrive-atex.lin@gmail.com/我的雲端硬碟/12.Codex/FlipClock",
+  "status": "V0.6.6 versioned archive ready; Windows tray behavior still needs real Windows runtime verification."
 }
