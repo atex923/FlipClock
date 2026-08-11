@@ -1,0 +1,20 @@
+{
+  "project": "FlipClock",
+  "version": "V0.6.5",
+  "platforms": [
+    "Windows",
+    "macOS (basic window support)",
+    "Linux (basic window support)"
+  ],
+  "recommended_python": "3.13 x64",
+  "handoff_entry": "CODEX_HANDOFF.md",
+  "entry_points": [
+    "FlipClock_V0.6.5.py",
+    "FlipClock_V0.6.5.pyw"
+  ],
+  "build_scripts": [
+    "Build_FlipClock_V0.6.5_Standalone.bat",
+    "Build_FlipClock_V0.6.5_Onefile.bat"
+  ],
+  "status": "V0.6.5 upgrade complete; Windows tray behavior still needs real Windows runtime verification."
+}
