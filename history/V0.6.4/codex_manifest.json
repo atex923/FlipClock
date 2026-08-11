@@ -1,0 +1,13 @@
+{
+  "project": "FlipClock",
+  "version": "V0.6.4",
+  "platforms": [
+    "Windows",
+    "macOS (basic window support)"
+  ],
+  "recommended_python": "3.13 x64",
+  "handoff_entry": "CODEX_HANDOFF.md",
+  "pending": [
+    "Custom ICO for .pyw/system tray without external dependencies"
+  ]
+}

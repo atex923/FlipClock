@@ -1,0 +1,29 @@
+FlipClock V0.6.4 原生系統匣版
+
+本版已完全移除：
+- pystray
+- Pillow / PIL
+- 外部系統匣套件
+- 額外套件自動安裝
+
+系統匣改用 Windows 原生 API：
+- Shell_NotifyIconW
+- NOTIFYICONDATAW
+- RegisterClassExW
+- CreateWindowExW
+- Win32 訊息迴圈
+
+因此直接執行 .pyw 或 Nuitka 轉譯後，不會再出現
+「未安裝 pystray 或 Pillow」的訊息。
+
+操作：
+- 右上角 X 或 Esc：隱藏至系統匣
+- 左鍵或雙擊系統匣圖示：顯示／隱藏時鐘
+- 右鍵系統匣圖示：顯示／隱藏、結束程式
+
+Nuitka 建置只需要：
+py -3.13 -m pip install --upgrade Nuitka ordered-set zstandard
+
+不需要：
+--include-package=pystray
+--include-package=PIL

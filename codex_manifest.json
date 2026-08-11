@@ -16,6 +16,7 @@
     "Build_FlipClock_V0.6.6_Standalone.bat",
     "Build_FlipClock_V0.6.6_Onefile.bat"
   ],
+  "history_root": "history",
   "cloud_archive_root": "/Users/atex1/Library/CloudStorage/GoogleDrive-atex.lin@gmail.com/我的雲端硬碟/12.Codex/FlipClock",
-  "status": "V0.6.6 versioned archive ready; Windows tray behavior still needs real Windows runtime verification."
+  "status": "V0.6.6 is the only version at repository root; older versions are archived under history/V0.6.x."
 }
